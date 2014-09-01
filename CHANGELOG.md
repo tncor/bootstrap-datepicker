@@ -1,6 +1,18 @@
 Changelog
 =========
 
+Merged pull requests
+---------
+
+Don't clear input after typing date and hitting Enter
+by @WojtekKruszewski
+https://github.com/WojtekKruszewski/bootstrap-datepicker/tree/dont_clear_date_after_enter
+
+zIndex Fix in Modals
+by @mjomble
+https://github.com/mjomble/bootstrap-datepicker/tree/patch-1
+
+
 1.1.2
 ----------
 
