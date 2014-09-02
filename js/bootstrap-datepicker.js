@@ -318,7 +318,7 @@
 						keydown: $.proxy(this.keydown, this)
 					}],
 					[this.component, {
-						click: $.proxy(this.show, this)
+                        click: $.proxy(this.o.componentToggle ? this.toggle : this.show, this)
 					}]
 				];
 			}
@@ -407,6 +407,13 @@
 			});
 		},
 
+        toggle: function() {
+          if (this.picker.is(':visible')) {
+            this.hide();
+          } else {
+            this.show();  
+          }
+        },
 		show: function(){
 			if (!this.isInline)
 				this.picker.appendTo('body');
