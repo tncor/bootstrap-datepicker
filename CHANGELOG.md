@@ -12,6 +12,9 @@ zIndex Fix in Modals
 by @mjomble
 https://github.com/mjomble/bootstrap-datepicker/tree/patch-1
 
+fir for https://github.com/eternicode/bootstrap-datepicker/issues/775
+by @n9
+https://github.com/n9/bootstrap-datepicker/commit/6deee4ec7fa22bd1dee78913e0340f3841f58982
 
 1.1.2
 ----------
