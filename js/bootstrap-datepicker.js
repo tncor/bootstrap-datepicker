@@ -906,6 +906,20 @@
 			}
 		},
 
+        clear: function () {
+          var element;
+          if (this.isInput)
+              element = this.element;
+          else if (this.component)
+              element = this.element.find('input');
+          if (element)
+              element.val("").change();
+          this.update();
+          this._trigger('changeDate');
+          if (this.o.autoclose)
+              this.hide();
+        },
+
 		click: function(e){
 			e.preventDefault();
 			var target = $(e.target).closest('span, td, th'),
